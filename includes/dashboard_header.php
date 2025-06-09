@@ -8,13 +8,13 @@ define('BASE_URL_INC', './'); // Define BASE_URL for includes if not already def
 
 // Use session data if available, otherwise mock data for direct testing
 $user_name = isset($_SESSION['user_name']) ? htmlspecialchars($_SESSION['user_name']) : 'Guest User';
-$user_avatar_path = isset($_SESSION['user_avatar']) ? htmlspecialchars($_SESSION['user_avatar']) : BASE_URL_INC . 'images/user_avatar_placeholder.png';
+$user_avatar_path = isset($_SESSION['user_avatar']) ? htmlspecialchars($_SESSION['user_avatar']) : BASE_URL_INC . 'images/admin.jpg';
 $user_role = isset($_SESSION['user_role']) ? $_SESSION['user_role'] : 'student'; // Default to student for testing
 
 // Ensure user_avatar_path is a valid URL or relative path from root
 if (!filter_var($user_avatar_path, FILTER_VALIDATE_URL) && !file_exists(rtrim($_SERVER['DOCUMENT_ROOT'], '/') . '/' . ltrim($user_avatar_path, '/'))) {
      // Fallback if file doesn't exist and not a URL
-    $user_avatar = BASE_URL_INC . 'images/user_avatar_placeholder.png'; // Default placeholder
+    $user_avatar = BASE_URL_INC . 'images/admin.jpg'; // Default placeholder
 } else {
     $user_avatar = $user_avatar_path;
 }
