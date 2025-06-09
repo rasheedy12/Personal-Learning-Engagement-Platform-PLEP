@@ -5,10 +5,10 @@ $_SESSION['user_role'] = 'admin';
 include 'includes/dashboard_header.php';
 
 $users_data = [
-    ['id' => 1, 'name' => 'John Student', 'avatar' => BASE_URL . 'images/avatars/student.png', 'email' => 'student@example.com', 'role' => 'Student', 'status' => 'Active', 'joined_date' => '2025-01-15'],
-    ['id' => 2, 'name' => 'Dr. Sarah Chen', 'avatar' => BASE_URL . 'images/avatars/instructor.png', 'email' => 'instructor@example.com', 'role' => 'Instructor', 'status' => 'Active', 'joined_date' => '2024-11-20'],
-    ['id' => 3, 'name' => 'Admin User', 'avatar' => BASE_URL . 'images/avatars/admin.png', 'email' => 'admin@example.com', 'role' => 'Admin', 'status' => 'Active', 'joined_date' => '2024-10-01'],
-    ['id' => 104, 'name' => 'Mike Davis (Suspended)', 'avatar' => BASE_URL . 'images/user_avatar_placeholder.png', 'email' => 'mike.inactive@example.com', 'role' => 'Student', 'status' => 'Suspended', 'joined_date' => '2025-03-01'],
+    ['id' => 1, 'name' => 'John Student', 'avatar' => BASE_URL . 'images/student.jpg', 'email' => 'student@example.com', 'role' => 'Student', 'status' => 'Active', 'joined_date' => '2025-01-15'],
+    ['id' => 2, 'name' => 'Dr. Sarah Chen', 'avatar' => BASE_URL . 'images/instructor.jpg', 'email' => 'instructor@example.com', 'role' => 'Instructor', 'status' => 'Active', 'joined_date' => '2024-11-20'],
+    ['id' => 3, 'name' => 'Admin User', 'avatar' => BASE_URL . 'images/admin.jpg', 'email' => 'admin@example.com', 'role' => 'Admin', 'status' => 'Active', 'joined_date' => '2024-10-01'],
+    ['id' => 104, 'name' => 'Mike Davis (Suspended)', 'avatar' => BASE_URL . 'images/student.jpg', 'email' => 'mike.inactive@example.com', 'role' => 'Student', 'status' => 'Suspended', 'joined_date' => '2025-03-01'],
 ];
 ?>
 <div class="container-fluid">
